@@ -1,8 +1,8 @@
-import React from 'react';
-// import PropTypes from 'prop-types';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown, faUser, faLock, faBars } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react';
+
+// import PropTypes from 'prop-types';
 
 import styles from './TopBar.module.scss';
 

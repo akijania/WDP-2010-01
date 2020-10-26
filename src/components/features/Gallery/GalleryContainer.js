@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import Gallery from './Gallery';
+
 import {
   getGalleryTabs,
   getGalleryPromotedProduct,
@@ -8,6 +8,8 @@ import {
   getSalesOff,
   getTopRated,
 } from '../../../redux/galleryRedux';
+
+import Gallery from './Gallery';
 
 const mapStateToProps = state => ({
   featured: getFeatured(state),

@@ -1,7 +1,9 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './ProductPagePrice.module.scss';
+import React from 'react';
+
 import Button from '../../common/Button/Button';
+
+import styles from './ProductPagePrice.module.scss';
 
 const ProductPagePrice = ({ price, oldPrice }) => (
   <div className={styles.prices}>

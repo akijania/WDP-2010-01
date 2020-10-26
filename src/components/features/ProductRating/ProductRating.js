@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import style from './ProductRating.module.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar as sStar } from '@fortawesome/free-solid-svg-icons';
 import { faStar as rStar } from '@fortawesome/free-regular-svg-icons';
+import { faStar as sStar } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import PropTypes from 'prop-types';
+import React, { useState } from 'react';
+
+import style from './ProductRating.module.scss';
 
 const ProductRating = ({ id, stars, isStarred, setStars }) => {
   const [isHovered, setIsHovered] = useState(false);

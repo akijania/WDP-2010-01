@@ -1,5 +1,6 @@
-import React from 'react';
 import { shallow } from 'enzyme';
+import React from 'react';
+
 import LastPost from './LastPost';
 
 describe('Component LastPost', () => {

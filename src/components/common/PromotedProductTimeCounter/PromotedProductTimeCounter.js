@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import styles from './../PromotedProductBox/PromotedProductBox.module.scss';
 import PropTypes from 'prop-types';
+import React, { useEffect, useState } from 'react';
+
+import styles from './../PromotedProductBox/PromotedProductBox.module.scss';
 
 const PromotedProductTimeCounter = ({ endTime }) => {
   const productEndTime = new Date(endTime);

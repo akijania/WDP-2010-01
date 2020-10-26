@@ -1,8 +1,9 @@
-import React from 'react';
-import styles from './ProductImages.module.scss';
-import PropTypes from 'prop-types';
 import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import PropTypes from 'prop-types';
+import React from 'react';
+
+import styles from './ProductImages.module.scss';
 
 const ProductImages = ({ images }) => {
   return (

@@ -1,11 +1,12 @@
-import React from 'react';
+import { faCalendar } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import PropTypes from 'prop-types';
+import React from 'react';
+
+import CountComments from '../../features/CountComments/CountComments';
+import Button from '../Button/Button';
 
 import styles from './LastPost.module.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendar } from '@fortawesome/free-solid-svg-icons';
-import Button from '../Button/Button';
-import CountComments from '../../features/CountComments/CountComments';
 
 const LastPost = ({ id, date, comments, title, description, image }) => (
   <div className={styles.root}>
@@ -31,7 +32,6 @@ const LastPost = ({ id, date, comments, title, description, image }) => (
         <Button href={`/blog/${id}`} variant='medium'>
           Read more
         </Button>
-        Read more
       </div>
     </div>
   </div>

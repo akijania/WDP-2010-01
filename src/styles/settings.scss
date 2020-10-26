@@ -11,6 +11,7 @@ $veryLightGray: #e1e1e1;
 $lightGrayishBlue: #e0e3ed;
 $mediumLightGrayishBlue: #f4f5f7;
 $battleshipGray: #434343;
+$mediumGrayColor: #676767;
 $shadow: #363636;
 $orange: #d58e32;
 $white: #ffffff;
@@ -45,6 +46,7 @@ $button-compare-color: $white;
 $button-next-back-bgc: $darkGray;
 $button-next-back-color: $white;
 $button-next-back-hover: $orange;
+$button-continue: $black;
 
 /* FEATURE BOX */
 $featureBox-root-border: $mediumDarkGray;
@@ -135,6 +137,10 @@ $promotedProduct-dots-a: $white;
 $promotedProduct-hover-bc: $orange;
 $promotedProductBox-border: $veryDarkGray;
 
+/*PRODUCT DETAILS*/
+$border: $veryLightGray;
+$colorText: $mediumGrayColor;
+
 /* SALES */
 $sales-bc: $darkGray;
 $sales-border: $orange;
@@ -211,3 +217,19 @@ $clientFeedback-h-color: $orange;
 $clientFeedback-dots-bc: $white;
 $clientFeedback-dots-a: $veryLightGray;
 $clientFeedback-hover-dc: $orange;
+
+/* FILTER BY CATEGORIES COMPONENT */
+$filterCategory-circle-font: $white;
+$filterCategory-theme-color: $orange;
+$filterCategory-black-color: $black;
+
+/* CART */
+$cartPrice: $orange;
+$cartClose: $orange;
+$productBorder: $mediumGray;
+$productQuantity: $black;
+$cartOverlay: $white;
+
+/* CONTROLBAR */
+$controlBar-box-frame-color: $lightGray;
+$controlBar-button-hover-color: $orange;

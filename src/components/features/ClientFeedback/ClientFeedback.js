@@ -1,9 +1,10 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
 
-import styles from './ClientFeedback.module.scss';
 import Feedback from '../../common/Feedback/Feedback';
 import SwipeComponent from '../../common/SwipeComponent/SwipeComponent';
+
+import styles from './ClientFeedback.module.scss';
 
 class ClientFeedback extends React.Component {
   state = {

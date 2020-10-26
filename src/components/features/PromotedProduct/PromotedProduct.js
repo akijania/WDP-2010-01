@@ -1,9 +1,10 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
+
 import styles from './PromotedProduct.module.scss';
+import PromotedProductCarousel from './PromotedProductCarousel';
 import PromotedProductSlider from './PromotedProductSlider';
 import PromotedProductSwipe from './PromotedProductSwipe';
-import PromotedProductCarousel from './PromotedProductCarousel';
 
 const PromotedProduct = ({ hotDeal, promotedProduct }) => {
   return (

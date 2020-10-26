@@ -1,14 +1,22 @@
 import { combineReducers, createStore } from 'redux';
-import initialState from './initialState';
+import { persistStore, persistReducer } from 'redux-persist';
+import storage from 'redux-persist/lib/storage';
 
+import brandsReducer from './brandsRedux';
 import cartReducer from './cartRedux';
 import categoriesReducer from './categoriesRedux';
-import productsReducer from './productsRedux';
 import compareProductsReducer from './compareRedux';
-import viewportReducer from './viewportRedux';
-import postsReducer from './postsRedux ';
-import brandsReducer from './brandsRedux';
 import galleryReducer from './galleryRedux';
+import initialState from './initialState';
+import postsReducer from './postsRedux';
+import productsReducer from './productsRedux';
+import viewportReducer from './viewportRedux';
+
+const persistConfig = {
+  key: 'root',
+  storage,
+  whitelist: ['cart'],
+};
 
 // define reducers
 const reducers = {
@@ -30,12 +38,14 @@ Object.keys(initialState).forEach(item => {
 });
 
 const combinedReducers = combineReducers(reducers);
+const persistedReducer = persistReducer(persistConfig, combinedReducers);
 
 // create store
 const store = createStore(
-  combinedReducers,
+  persistedReducer,
   initialState,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
 export default store;
+export const persistor = persistStore(store);

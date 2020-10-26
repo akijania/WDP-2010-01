@@ -1,17 +1,16 @@
 import React from 'react';
+
 // import PropTypes from 'prop-types';
-
-import styles from './Homepage.module.scss';
-
-import FeatureBoxes from '../../features/FeatureBoxes/FeatureBoxes';
-import NewFurniture from '../../features/NewFurniture/NewFurnitureContainer';
-import Gallery from '../../features/Gallery/GalleryContainer';
+import Brands from '../../features/Brands/BrandsContainer';
 import ClientFeedback from '../../features/ClientFeedback/ClientFeedbackContainer';
-
+import FeatureBoxes from '../../features/FeatureBoxes/FeatureBoxes';
+import Gallery from '../../features/Gallery/GalleryContainer';
+import LatestBlog from '../../features/LatestBlog/LatestBlogContainer';
+import NewFurniture from '../../features/NewFurniture/NewFurnitureContainer';
 import PromotedProduct from '../../features/PromotedProduct/PromotedProductContainer';
 import SalesContainer from '../../features/Sales/SalesContainer';
-import LatestBlog from '../../features/LatestBlog/LatestBlogContainer';
-import Brands from '../../features/Brands/BrandsContainer';
+
+import styles from './Homepage.module.scss';
 
 const Homepage = () => (
   <div className={styles.root}>

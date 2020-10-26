@@ -1,6 +1,8 @@
 @import "../../../styles/settings.scss";
 
 .root {
+  @extend %hover-effect;
+
   .photo {
     position: relative;
     background: {
@@ -23,22 +25,21 @@
     transform: translateY(-50px);
     font-size: 12px;
 
+    &:hover {
+      color: $lastPost-body-hover;
+      text-decoration: none;
+    }
+
     h4 {
       text-align: left;
       padding-top: 10px;
     }
 
     h4 a {
-      @extend %hover-effect;
       font-size: 16px;
       line-height: 26px;
       letter-spacing: 1px;
       color: $lastPost-body-a;
-
-      &:hover {
-        color: $lastPost-body-hover;
-        text-decoration: none;
-      }
     }
 
     .description {

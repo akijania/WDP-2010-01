@@ -8,6 +8,7 @@
     border-bottom: 2px solid $brands-border;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 
     .arrow {
       height: 92px;
@@ -30,13 +31,22 @@
 
     .brandBox {
       display: flex;
-      width: 1040px;
+      width: 90%;
 
       img {
         width: 143px;
         height: 92px;
         object-fit: cover;
         margin: 25px 15px;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .root {
+    .wrapper {
+      .brandBox {
+        width: 80%;
       }
     }
   }

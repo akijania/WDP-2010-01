@@ -1,8 +1,8 @@
 import { connect } from 'react-redux';
 
-import LatestBlog from './LatestBlog';
+import { getAllPosts } from '../../../redux/postsRedux';
 
-import { getAllPosts } from '../../../redux/postsRedux ';
+import LatestBlog from './LatestBlog';
 
 const mapStateToProps = state => ({
   posts: getAllPosts(state),

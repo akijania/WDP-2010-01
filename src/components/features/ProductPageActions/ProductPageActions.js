@@ -1,7 +1,4 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styles from './ProductPageActions.module.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart } from '@fortawesome/free-regular-svg-icons';
 import {
   faEnvelope,
   faExchangeAlt,
@@ -9,8 +6,13 @@ import {
   faPlus,
   faShoppingBasket,
 } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import PropTypes from 'prop-types';
+import React from 'react';
+
 import Button from '../../common/Button/Button';
-import { faHeart } from '@fortawesome/free-regular-svg-icons';
+
+import styles from './ProductPageActions.module.scss';
 
 const ProductPageActions = ({
   id,

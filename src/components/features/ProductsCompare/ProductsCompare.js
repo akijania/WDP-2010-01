@@ -1,9 +1,11 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styles from './ProductsCompare.module.scss';
 import { faExchangeAlt, faWindowClose } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import PropTypes from 'prop-types';
+import React from 'react';
+
 import Button from '../../common/Button/Button';
+
+import styles from './ProductsCompare.module.scss';
 
 const ProductsCompare = ({ compare, unsetCompare }) => {
   const products = compare && compare.products;

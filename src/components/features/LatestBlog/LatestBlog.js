@@ -1,9 +1,9 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-
-import styles from './LatestBlog.module.scss';
+import React from 'react';
 
 import LastPost from '../../common/LastPost/LastPost';
+
+import styles from './LatestBlog.module.scss';
 
 class LatestBlog extends React.Component {
   state = {

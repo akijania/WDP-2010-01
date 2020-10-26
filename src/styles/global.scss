@@ -4,4 +4,13 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  transition: left 0.9s cubic-bezier(0.87, 0, 0.13, 1);
+  position: relative;
+  left: 0;
+}
+
+body.slide {
+  position: relative;
+  left: -500px;
+  overflow: hidden;
 }

@@ -1,13 +1,14 @@
-import React from 'react';
+import { faHeart } from '@fortawesome/free-regular-svg-icons';
+import { faExchangeAlt, faShoppingBasket } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import PropTypes from 'prop-types';
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+import ProductRating from '../../features/ProductRating/ProductRatingContainer';
+import Button from '../Button/Button';
 
 import styles from './ProductBox.module.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faExchangeAlt, faShoppingBasket } from '@fortawesome/free-solid-svg-icons';
-import Button from '../Button/Button';
-import ProductRating from '../../features/ProductRating/ProductRatingContainer';
-import { faHeart } from '@fortawesome/free-regular-svg-icons';
-import { Link } from 'react-router-dom';
 
 const ProductBox = ({
   id,
@@ -22,6 +23,7 @@ const ProductBox = ({
   count,
   compare,
   addToFavourite,
+  addToCart,
   heart,
 }) => {
   const isProductAddedToCompare =
@@ -47,6 +49,12 @@ const ProductBox = ({
     addToFavourite(id);
   };
 
+  const addToCartHandler = event => {
+    event.preventDefault();
+    addToCart({ id, name, price, image });
+    document.body.classList.add('slide');
+  };
+
   return (
     <div className={styles.root}>
       <div className={styles.photo}>
@@ -58,7 +66,7 @@ const ProductBox = ({
           <Button variant='small' className={styles.button}>
             Quick View
           </Button>
-          <Button variant='small' className={styles.button}>
+          <Button variant='small' className={styles.button} onClick={addToCartHandler}>
             <FontAwesomeIcon icon={faShoppingBasket}></FontAwesomeIcon> ADD TO CART
           </Button>
         </div>
@@ -113,6 +121,7 @@ ProductBox.propTypes = {
   count: PropTypes.number.isRequired,
   compare: PropTypes.object.isRequired,
   addToFavourite: PropTypes.func.isRequired,
+  addToCart: PropTypes.func.isRequired,
 };
 
 export default ProductBox;

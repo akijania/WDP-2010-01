@@ -1,5 +1,6 @@
-import React from 'react';
 import { shallow } from 'enzyme';
+import React from 'react';
+
 import ProductSearch from './ProductSearch';
 
 describe('Component ProductSearch', () => {

@@ -1,7 +1,3 @@
-import React from 'react';
-import styles from './ProductPageSocialMedia.module.scss';
-import Button from '../../common/Button/Button';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faFacebookF,
   faGooglePlusG,
@@ -9,6 +5,12 @@ import {
   faTwitter,
   faPinterestP,
 } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react';
+
+import Button from '../../common/Button/Button';
+
+import styles from './ProductPageSocialMedia.module.scss';
 
 const ProductPageSocialMedia = () => (
   <div className={styles.actions}>

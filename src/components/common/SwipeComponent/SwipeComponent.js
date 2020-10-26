@@ -1,5 +1,5 @@
-import React, { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import React, { useRef, useEffect } from 'react';
 import Swiper from 'react-id-swiper';
 import 'swiper/swiper.scss';
 

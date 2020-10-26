@@ -6,6 +6,9 @@ const initialState = {
     { id: 'table', name: 'Table' },
     { id: 'dining', name: 'Dining' },
   ],
+  filter: {
+    activeCategory: 'bed',
+  },
   galleryTabs: [
     { id: 'featured', name: 'Featured' },
     { id: 'topSeller', name: 'Top seller' },
@@ -1595,6 +1598,8 @@ const initialState = {
     },
   ],
   cart: {
+    isOpen: false,
+    totalPrice: 0,
     products: [],
   },
   compare: {

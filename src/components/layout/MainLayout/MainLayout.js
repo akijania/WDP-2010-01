@@ -1,14 +1,15 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
 
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
-
+import CartMini from '../../features/CartMini/CartMiniContainer';
 import ViewportListener from '../../features/ViewportListener/ViewportListener';
+import Footer from '../Footer/Footer';
+import Header from '../Header/Header';
 
 const MainLayout = ({ children }) => (
   <div>
     <ViewportListener />
+    <CartMini />
     <Header />
     {children}
     <Footer />

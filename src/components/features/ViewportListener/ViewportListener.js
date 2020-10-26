@@ -1,7 +1,8 @@
-import { useCallback, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { setViewport } from '../../../redux/viewportRedux';
+import { useCallback, useEffect } from 'react';
 import { connect } from 'react-redux';
+
+import { setViewport } from '../../../redux/viewportRedux';
 
 const ViewportListener = ({ setViewport }) => {
   const breakpoints = {

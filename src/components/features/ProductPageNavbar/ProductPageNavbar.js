@@ -1,8 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styles from './ProductPageNavbar.module.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import PropTypes from 'prop-types';
+import React from 'react';
+
+import styles from './ProductPageNavbar.module.scss';
 
 const ProductPageNavbar = ({ category }) => (
   <div className={styles.menu}>

@@ -1,6 +1,8 @@
 import { connect } from 'react-redux';
-import PromotedProductBox from './PromotedProductBox';
+
 import { setCompare, getCount } from '../../../redux/compareRedux';
+
+import PromotedProductBox from './PromotedProductBox';
 
 const mapStateToProps = state => ({
   count: getCount(state),

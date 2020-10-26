@@ -19,7 +19,8 @@
     }
   },
   "plugins": [
-    "react"
+    "react",
+    "import"
   ],
   "extends": [
     "eslint:recommended",
@@ -47,6 +48,18 @@
     ],
     "no-console": "warn",
     "no-debugger": "error",
-    "jsx-a11y/anchor-is-valid": "off"
+    "jsx-a11y/anchor-is-valid": "off",
+    "import/order": [
+      "error",
+      {
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        },
+        "newlines-between": "always",
+        "groups": ["builtin", "external", "parent", "sibling", "index"],
+        "pathGroupsExcludedImportTypes": ["builtin"]
+      }
+    ]
   }
 }

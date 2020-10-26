@@ -1,6 +1,8 @@
 import { connect } from 'react-redux';
-import ProductsCompare from './ProductsCompare';
+
 import { unsetCompare } from '../../../redux/compareRedux';
+
+import ProductsCompare from './ProductsCompare';
 
 const mapStateToProps = state => ({
   compare: state.compare,

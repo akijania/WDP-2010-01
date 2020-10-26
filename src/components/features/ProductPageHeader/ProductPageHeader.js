@@ -1,7 +1,9 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './ProductPageHeader.module.scss';
+import React from 'react';
+
 import ProductRating from '../ProductRating/ProductRatingContainer';
+
+import styles from './ProductPageHeader.module.scss';
 
 const ProductPageHeader = ({ name, id, stars, isStarred }) => (
   <div className={styles.content}>

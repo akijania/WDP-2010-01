@@ -1,10 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styles from './PromotedProduct.module.scss';
-import Button from '../../common/Button/Button';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import PropTypes from 'prop-types';
+import React from 'react';
+
 import { useSlider } from '../../../hooks/useSlider';
+import Button from '../../common/Button/Button';
+
+import styles from './PromotedProduct.module.scss';
 
 const PromotedProductSlider = ({ images, title, spanTitle, subTitle, button }) => {
   const { slider, prevSlide, nextSlide, currentSlide } = useSlider();

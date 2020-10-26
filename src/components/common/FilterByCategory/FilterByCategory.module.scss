@@ -1,0 +1,68 @@
+@import "../../../styles/settings.scss";
+
+.borderLine {
+  padding: 1rem 1rem 1rem 0;
+  border-top: 1px solid $filterCategory-black-color;
+}
+
+.wrapperFilter {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.categoriesCircle {
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  background: $filterCategory-black-color;
+  color: $filterCategory-circle-font;
+  display: flex;
+  width: 25px;
+  flex-direction: row;
+}
+
+.categoriesCircleActive {
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  background: $filterCategory-theme-color;
+  color: $filterCategory-circle-font;
+  display: flex;
+  width: 25px;
+  flex-direction: row;
+  margin-left: 20%;
+}
+
+.activeText {
+  color: $filterCategory-theme-color;
+  margin-left: 1rem;
+}
+
+.title span {
+  font-weight: bold;
+  position: relative;
+}
+
+.title {
+  margin-bottom: 0px;
+}
+
+.icon {
+  font-size: 10px;
+  font-weight: 300;
+  margin-right: 10px;
+}

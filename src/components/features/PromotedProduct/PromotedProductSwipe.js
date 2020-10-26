@@ -1,10 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styles from './PromotedProduct.module.scss';
-import Button from '../../common/Button/Button';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import PropTypes from 'prop-types';
+import React from 'react';
+
+import Button from '../../common/Button/Button';
 import SwipeComponent from '../../common/SwipeComponent/SwipeComponent';
+
+import styles from './PromotedProduct.module.scss';
 
 class PromotedProductSwipe extends React.Component {
   state = {
@@ -29,7 +31,9 @@ class PromotedProductSwipe extends React.Component {
 
     const swipeContent = [];
     for (let page = 0; page < pagesCount; page++) {
-      swipeContent.push(<img src={images[page].image} alt={images[page].imageAlt} />);
+      swipeContent.push(
+        <img src={images[page].image} alt={images[page].imageAlt} key={page} />
+      );
     }
 
     return (

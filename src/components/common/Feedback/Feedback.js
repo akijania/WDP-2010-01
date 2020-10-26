@@ -1,8 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styles from './Feedback.module.scss';
 import { faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import PropTypes from 'prop-types';
+import React from 'react';
+
+import styles from './Feedback.module.scss';
 
 const Feedback = ({ image, text, name, category }) => {
   return (

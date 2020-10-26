@@ -1,10 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import ProductSearch from '../../features/ProductSearch/ProductSearch';
-import styles from './MenuBar.module.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import PropTypes from 'prop-types';
+import React from 'react';
 import { Link } from 'react-router-dom';
+
+import ProductSearch from '../../features/ProductSearch/ProductSearch';
+
+import styles from './MenuBar.module.scss';
 
 const MenuBar = ({ children }) => (
   <div className={styles.root}>

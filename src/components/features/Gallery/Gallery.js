@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import styles from './Gallery.module.scss';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart, faEye } from '@fortawesome/free-regular-svg-icons';
 import {
   faExchangeAlt,
   faShoppingBasket,
   faAngleLeft,
   faAngleRight,
 } from '@fortawesome/free-solid-svg-icons';
-import { faHeart, faEye } from '@fortawesome/free-regular-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import PropTypes from 'prop-types';
+import React, { useState } from 'react';
 
 import Button from '../../common/Button/Button';
 import ProductRating from '../ProductRating/ProductRating';
+
+import styles from './Gallery.module.scss';
 
 const Gallery = props => {
   const { galleryTabs: categories, galleryPromotedProduct } = props;
@@ -170,6 +170,7 @@ const Gallery = props => {
     </div>
   );
 };
+
 Gallery.propTypes = {
   galleryPromotedProduct: PropTypes.object,
   galleryTabs: PropTypes.array,

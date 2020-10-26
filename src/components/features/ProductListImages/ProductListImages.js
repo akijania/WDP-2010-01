@@ -1,11 +1,11 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
+
 import ProductBox from '../../common/ProductBox/ProductBoxContainer';
 
-const ProductListImages = ({ id, products, name }) => {
+const ProductListImages = ({ id, products }) => {
   return (
     <div>
-      <h2>{name}</h2>
       <div className='container'>
         <div className='row'>
           <div className='col'>
@@ -29,7 +29,6 @@ const ProductListImages = ({ id, products, name }) => {
 ProductListImages.propTypes = {
   category: PropTypes.string,
   id: PropTypes.string,
-  name: PropTypes.string,
   products: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string,

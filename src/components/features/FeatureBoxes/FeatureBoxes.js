@@ -1,15 +1,15 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-
 import {
   faTruck,
   faHeadphones,
   faReplyAll,
   faBullhorn,
 } from '@fortawesome/free-solid-svg-icons';
+import PropTypes from 'prop-types';
+import React from 'react';
+
+import FeatureBox from '../../common/FeatureBox/FeatureBox';
 
 import styles from './FeatureBoxes.module.scss';
-import FeatureBox from '../../common/FeatureBox/FeatureBox';
 
 const FeatureBoxes = () => (
   <div className={styles.root}>

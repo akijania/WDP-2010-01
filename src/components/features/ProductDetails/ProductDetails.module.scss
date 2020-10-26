@@ -1,0 +1,76 @@
+@import "../../../styles/settings.scss";
+
+.boxsecond {
+  margin-top: 60px;
+  border: 1px solid $border;
+
+  .navigation {
+    width: 50%;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+
+      li {
+        width: 100%;
+        text-align: center;
+
+        button {
+          line-height: 2.5rem;
+          background-color: $button-main-color;
+          font-weight: bold;
+          border: none;
+          border-right: 1px solid $border;
+          border-bottom: 1px solid $border;
+          text-transform: uppercase;
+          width: 100%;
+        }
+
+        button.second {
+          color: $button-next-back-hover;
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+  .reviewBox {
+    display: flex;
+    flex-direction: column;
+    padding: 35px 35px 70px;
+    color: $colorText;
+
+    p:nth-of-type(2) {
+      font-weight: bold;
+    }
+  }
+
+  .formReview {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 16px;
+
+    .inputReview {
+      width: 100%;
+    }
+
+    .spacing {
+      margin-top: 15px;
+    }
+
+    .buttonContinue {
+      width: 100%;
+      background-color: $button-continue;
+      color: $button-main-color;
+      border: none;
+
+      &:hover {
+        background-color: $button-next-back-hover;
+      }
+    }
+  }
+}

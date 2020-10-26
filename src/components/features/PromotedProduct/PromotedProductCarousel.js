@@ -1,8 +1,10 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './PromotedProduct.module.scss';
+import React from 'react';
+
 import { useSlider } from '../../../hooks/useSlider';
 import PromotedProductBox from '../../common/PromotedProductBox/PromotedProductBoxContainer';
+
+import styles from './PromotedProduct.module.scss';
 
 const PromotedProductCarousel = ({ hotDeal }) => {
   const { slider, setSlide, setIsPause, currentSlide } = useSlider(3, 10);

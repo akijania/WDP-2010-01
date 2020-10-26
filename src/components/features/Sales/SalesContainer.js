@@ -1,4 +1,5 @@
 import { connect } from 'react-redux';
+
 import Sales from './Sales';
 
 const mapStateToProps = state => ({

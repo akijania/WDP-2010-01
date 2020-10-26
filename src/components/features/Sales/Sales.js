@@ -1,6 +1,7 @@
-import React from 'react';
-import styles from './Sales.module.scss';
 import PropTypes from 'prop-types';
+import React from 'react';
+
+import styles from './Sales.module.scss';
 
 const Sales = ({ sales }) => {
   const { boxOne, boxTwo, boxThree } = sales;

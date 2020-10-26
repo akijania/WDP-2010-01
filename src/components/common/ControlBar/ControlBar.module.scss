@@ -1,0 +1,60 @@
+@import "../../../styles/settings.scss";
+
+.wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sort {
+  display: flex;
+  align-items: center;
+  margin-right: 3rem;
+}
+
+.show {
+  display: flex;
+  align-items: center;
+  margin-right: 3rem;
+}
+
+.show label {
+  display: flex;
+  margin-right: 20px;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+  position: relative;
+  top: 4px;
+}
+
+.sort label {
+  display: flex;
+  margin-right: 20px;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+  width: 100px;
+  position: relative;
+  top: 4px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  border: 1px solid $controlBar-box-frame-color;
+  border-radius: 5px;
+}
+
+.iconList,
+.iconLarge {
+  display: flex;
+  position: relative;
+  margin: 0 1rem 0 1rem;
+}
+
+.iconList:hover,
+.iconLarge:hover {
+  color: $controlBar-button-hover-color;
+}

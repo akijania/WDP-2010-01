@@ -1,8 +1,3 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-
-import styles from './Footer.module.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faTwitter,
   faFacebookF,
@@ -11,6 +6,11 @@ import {
   faLinkedinIn,
   faPinterestP,
 } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import PropTypes from 'prop-types';
+import React from 'react';
+
+import styles from './Footer.module.scss';
 
 const Footer = ({ children }) => (
   <footer className={styles.root}>
